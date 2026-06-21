@@ -60,3 +60,8 @@ body {
 ::-webkit-scrollbar-track {           
     background-color: var(--bg-color);
 }
+
+/* 强行隐藏右上角搜索按钮 */
+.notion-search {
+  display: none !important;
+}
