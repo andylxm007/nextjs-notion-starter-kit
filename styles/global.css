@@ -61,12 +61,20 @@ body {
     background-color: var(--bg-color);
 }
 
-/* 强行隐藏右上角搜索按钮 */
-.notion-search {
-  display: none !important;
-}
 
-/* 强行隐藏 Notion 渲染出来的搜索按钮 */
+tion 渲染出来的搜索按钮 */
 .notion-search-button {
     display: none !important;
+}
+/* 升级版暴力隐藏：锁定带有 header 属性下的 search button */
+div[role="button"].notion-search-button, 
+.notion-header .notion-search-button,
+.notion-search-button {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
