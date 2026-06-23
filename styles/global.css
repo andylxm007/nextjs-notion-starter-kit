@@ -65,3 +65,8 @@ body {
 .notion-search {
   display: none !important;
 }
+
+/* 强行隐藏 Notion 渲染出来的搜索按钮 */
+.notion-search-button {
+    display: none !important;
+}
